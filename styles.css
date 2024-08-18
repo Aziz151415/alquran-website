@@ -1,0 +1,49 @@
+/* General Styles */
+body {
+    font-family: 'Amiri', serif;
+    /* A classic Arabic-style font */
+    line-height: 1.8;
+    background-image: url('makkah.jpg');
+    /* Use the Makkah image */
+    background-size: cover;
+    /* Make sure the image covers the whole background */
+    background-position: center;
+    /* Center the background image */
+    background-attachment: fixed;
+    /* Make the background stay fixed while scrolling */
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 100, 0, 0.7);
+    /* Dark green with transparency */
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 5px solid #cda45e;
+    font-family: 'Amiri', serif;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 100, 0, 0.7);
+    /* Matching transparent footer */
+    color: #fff;
+    padding: 20px 0;
+    border-top: 5px solid #cda45e;
+    width: 100%;
+    margin-top: 20px;
+    /* Add some space above the footer */
+    text-align: center;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* White background with some transparency */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+}
