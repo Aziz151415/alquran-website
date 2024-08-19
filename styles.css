@@ -1,49 +1,94 @@
 /* General Styles */
 body {
     font-family: 'Amiri', serif;
-    /* A classic Arabic-style font */
-    line-height: 1.8;
-    background-image: url('makkah.jpg');
-    /* Use the Makkah image */
-    background-size: cover;
-    /* Make sure the image covers the whole background */
-    background-position: center;
-    /* Center the background image */
-    background-attachment: fixed;
-    /* Make the background stay fixed while scrolling */
+    background-color: #f9f9f9;
+    /* Light gray background */
     color: #333;
-    text-align: center;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
+/* Header */
 header {
-    background-color: rgba(0, 100, 0, 0.7);
-    /* Dark green with transparency */
+    background-color: #333;
+    /* Dark background for the header */
     color: #fff;
+    /* White text */
     padding: 20px 0;
-    border-bottom: 5px solid #cda45e;
+    border-bottom: 3px solid #cda45e;
+    /* Add a subtle bottom border */
     font-family: 'Amiri', serif;
+}
+
+/* Sections and Content Boxes */
+section {
+    background-color: #fff;
+    /* White background */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    max-width: 800px;
+    /* Limit the width */
+}
+
+h2 {
+    color: #4CAF50;
+    /* Green color for headers */
+    margin-bottom: 20px;
+}
+
+p,
+.adhkar p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Buttons */
+button {
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
 }
 
 /* Footer */
 footer {
-    background-color: rgba(0, 100, 0, 0.7);
-    /* Matching transparent footer */
-    color: #fff;
-    padding: 20px 0;
-    border-top: 5px solid #cda45e;
-    width: 100%;
-    margin-top: 20px;
-    /* Add some space above the footer */
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    border-top: 3px solid #cda45e;
+    /* Similar border as header */
     text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
 }
 
-section {
-    background-color: rgba(255, 255, 255, 0.8);
-    /* White background with some transparency */
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
+/* Responsive Design */
+@media (max-width: 600px) {
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    button {
+        width: 100%;
+        /* Full width on small screens */
+        margin: 10px 0;
+    }
 }
