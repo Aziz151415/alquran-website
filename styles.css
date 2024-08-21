@@ -5,7 +5,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Amiri', serif;
-    background-color: #f9f9f9;
+    background-image: url('AL-QURAN-9 2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #333;
     text-align: center;
 }
@@ -17,7 +21,8 @@ body {
 
 /* Header */
 header {
-    background-color: #87CEEB;
+    background-color: rgba(135, 206, 235, 0.8);
+    /* Light Sky Blue with some transparency */
     color: #fff;
     padding: 20px 0;
     border-bottom: 5px solid #cda45e;
@@ -39,21 +44,37 @@ header {
     margin: 0;
 }
 
+.site-title p {
+    font-weight: bold;
+    /* Make "Nafahat Al-Iman" bold */
+}
+
 /* Hero Section */
 .hero {
-    background-image: url('AL-QURAN-9.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Semi-transparent black overlay */
     padding: 60px 0;
+    position: relative;
 }
 
 .hero-text {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url('birds.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    /* Light blend with the background */
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
     color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text h2,
+.hero-text p {
+    margin: 0;
+    z-index: 2;
 }
 
 /* Main Content */
@@ -72,12 +93,10 @@ main {
     gap: 20px;
     max-width: 800px;
     width: 100%;
-    background: none;
-    /* Remove white background */
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #4c9daf;
     color: white;
     padding: 15px 0;
     margin: 10px;
@@ -96,7 +115,8 @@ button:hover {
 
 /* Footer */
 footer {
-    background-color: #87CEEB;
+    background-color: rgba(135, 206, 235, 0.8);
+    /* Light Sky Blue with some transparency */
     color: #fff;
     padding: 20px 0;
     border-top: 5px solid #cda45e;

@@ -46,6 +46,23 @@
         <p>&copy; 2024 القرآن الكريم - Al-Quran Al-Kareem | Nafahat Al-Iman</p>
         <p><a href="mailto:abdulaziz.h1407@gmail.com">Abdulaziz.h1407@gmail.com</a></p>
     </footer>
+
+    <script>
+        // Example ES6 enhancement: Displaying a dynamic message based on the time of day
+        const heroText = document.querySelector('.hero-text h2');
+        const hours = new Date().getHours();
+        let greeting;
+
+        if (hours < 12) {
+            greeting = 'صباح الخير! أهلا بكم في نفحات الإيمان';
+        } else if (hours < 18) {
+            greeting = 'مساء الخير! أهلا بكم في نفحات الإيمان';
+        } else {
+            greeting = 'مساء الخير! أهلا بكم في نفحات الإيمان';
+        }
+
+        heroText.textContent = greeting;
+    </script>
 </body>
 
 </html>
