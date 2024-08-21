@@ -39,14 +39,13 @@ header {
     margin-right: 20px;
 }
 
-.site-title h1,
-.site-title p {
+.site-title h1 {
     margin: 0;
 }
 
+/* Removed the small "Nafahat Al-Iman" text */
 .site-title p {
-    font-weight: bold;
-    /* Make "Nafahat Al-Iman" bold */
+    display: none;
 }
 
 /* Hero Section */
@@ -58,11 +57,8 @@ header {
 }
 
 .hero-text {
-    background-image: url('birds.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
-    /* Light blend with the background */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Match the background of the greeting box */
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
@@ -71,45 +67,42 @@ header {
     z-index: 1;
 }
 
-.hero-text h2,
-.hero-text p {
-    margin: 0;
-    z-index: 2;
-}
-
-/* Main Content */
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
+/* Buttons Section */
 .buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    /* Use flexbox to align buttons in a row */
+    justify-content: center;
+    /* Center the buttons horizontally */
     gap: 20px;
-    max-width: 800px;
-    width: 100%;
+    /* Space between buttons */
+    flex-wrap: wrap;
+    /* Ensure buttons wrap to next line if screen width is too small */
 }
 
 button {
-    background-color: #4c9daf;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Match the greeting box color */
     color: white;
-    padding: 15px 0;
+    padding: 20px 10px;
     margin: 10px;
     border: none;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    /* Rounded corners like the greeting box */
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    line-height: 1.5;
+    /* Space out the Arabic and English lines */
+    flex: 1 1 200px;
+    /* Flex-grow, flex-shrink, and min-width */
+    max-width: 200px;
+    /* Ensure buttons do not grow too large */
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Darker on hover */
     transform: translateY(-3px);
 }
 
